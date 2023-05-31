@@ -1,0 +1,17 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "sa-east-1",
+      "source_ami": "ami-12345678",
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "my-custom-ami",
+      "encrypt_boot": true,        
+      "encrypt_boot_kms_key_id": "alias/my-kms-key"  
+    }
+  ],
+  "provisioners": [
+    // Agrega los provisioners
+  ]
+}
